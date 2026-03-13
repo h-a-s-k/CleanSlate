@@ -219,11 +219,7 @@ settlement_decisions = {
 		from_potential = {
 			is_theocracy = yes
 			higher_tier_than = BARON
-
-			trigger_if = {
-				limit = { religion_group = pagan_group }
-				is_reformed_religion = yes
-			}
+			is_not_unreformed_pagan_trigger = yes
 		}
 
 		potential = {
@@ -312,7 +308,7 @@ settlement_decisions = {
 			holder = FROM # filter doesn't seem to be enough
 			is_capital = no
 
-			dejure_liege_title = {
+			county = {
 				holder = FROM
 			}
 		}
@@ -337,8 +333,10 @@ settlement_decisions = {
 				is_allowed_holding_type = FROM
 
 				# Not if existing capital is preferred
-				defacto_liege_title = {
-					NOT = { is_preferred_holding_type = FROM }
+				county = {
+					capital_holding = {
+						NOT = { is_preferred_holding_type = FROM }
+					}
 				}
 
 				# Not if this settlement is not preferred and another settlement is
@@ -346,7 +344,7 @@ settlement_decisions = {
 					limit = { NOT = { is_preferred_holding_type = FROM } }
 
 					NOT = {
-						defacto_liege_title = {
+						county = {
 							any_direct_de_jure_vassal_title = {
 								holder = FROM
 								is_preferred_holding_type = FROM
@@ -456,16 +454,19 @@ settlement_decisions = {
 
 					if = {
 						limit = {
-							has_nickname = no
 							is_adult = yes
 							is_incapable = no
 						}
 
 						random_list = {
-							5 = { give_nickname = nick_the_destroyer }
+							5 = {
+								trigger = { can_apply_cool_nickname_trigger = yes }
+								give_nickname = nick_the_destroyer
+							}
 
 							5 = {
 								trigger = {
+									can_apply_cool_nickname_trigger = yes
 									NOT = { religion = event_target:nickname_location }
 								}
 
@@ -474,16 +475,21 @@ settlement_decisions = {
 
 							5 = {
 								trigger = {
+									can_apply_cool_nickname_trigger = yes
 									NOT = { culture = event_target:nickname_location }
 								}
 
 								give_nickname = nick_the_slayer_of_culture
 							}
 
-							5 = { give_nickname = nick_the_terror_of_provincename }
+							5 = {
+								trigger = { can_apply_cool_nickname_trigger = yes }
+								give_nickname = nick_the_terror_of_provincename
+							}
 
 							5 = {
 								trigger = {
+									can_apply_cool_nickname_trigger = yes
 									NOT = { culture = event_target:nickname_location }
 								}
 
@@ -675,6 +681,8 @@ settlement_decisions = {
 		}
 
 		potential = {
+			tier = BARON
+
 			OR = {
 				holding_type = tribal
 
@@ -1079,6 +1087,8 @@ settlement_decisions = {
 		}
 
 		potential = {
+			tier = BARON
+
 			OR = {
 				holding_type = castle
 
@@ -1526,7 +1536,6 @@ settlement_decisions = {
 			has_dlc = "Horse Lords"
 			independent = yes
 			is_nomadic = yes
-			is_female = no
 
 			trigger_if = {
 				limit = { ai = no }
@@ -1537,12 +1546,13 @@ settlement_decisions = {
 		}
 
 		potential = {
+			tier = BARON
 			holding_type = city
 
 			trigger_if = {
 				limit = { FROM = { ai = no } }
 
-				capital_scope = {
+				location = {
 					is_coastal = yes
 				}
 			}
@@ -1565,11 +1575,12 @@ settlement_decisions = {
 				}
 			}
 		}
+
 		allow = {
 			OR = {
 				is_capital = yes
 
-				capital_scope = {
+				location = {
 					owned_by = FROM
 				}
 			}
@@ -1770,17 +1781,17 @@ settlement_decisions = {
 
 					custom_tooltip = { text = TT_NEW_KHAN }
 				}
-			}
 
-			hidden_effect = {
 				if = {
 					limit = {
-						capital_scope = {
-							is_coastal = yes
+						# Check here instead of FROM for the tooltip,
+						# because at this point the capital hasn't changed yet
+						ROOT = {
+							location = { is_coastal = yes }
 						}
 					}
 
-					FROM = {
+					hidden_effect = {
 						primary_title = {
 							create_title = {
 								tier = DUKE
@@ -1791,7 +1802,34 @@ settlement_decisions = {
 							}
 						}
 
+						# Change to Absolute-Cognatic if eligible under normal circumstances
+						# since Agnatic/Enatic-Cognatic is unavailable for merchant republics
+						if = {
+							limit = {
+								OR = {
+									has_law = cognatic_succession
+									has_law = enatic_cognatic_succession
+								}
+
+								gender_equality_trigger = yes
+							}
+
+							any_demesne_title = {
+								limit = {
+									title = succ_law_title
+									is_law_potential = true_cognatic_succession
+								}
+
+								add_law = {
+									law = true_cognatic_succession
+									cooldown = no
+									opinion_effect = no
+								}
+							}
+						}
+
 						create_family_palace = yes
+						set_government_type = merchant_republic_government
 
 						if = {
 							limit = {
@@ -1811,7 +1849,6 @@ settlement_decisions = {
 									}
 
 									is_lowborn = no
-									is_female = no
 									is_patrician = no
 									prisoner = no
 									is_incapable = no
@@ -1883,54 +1920,61 @@ settlement_decisions = {
 									}
 								}
 
+								if = {
+									limit = {
+										OR = {
+											has_law = cognatic_succession
+											has_law = enatic_cognatic_succession
+										}
+
+										gender_equality_trigger = yes
+									}
+
+									any_demesne_title = {
+										limit = {
+											title = succ_law_title
+											is_law_potential = true_cognatic_succession
+										}
+
+										add_law = {
+											law = true_cognatic_succession
+											cooldown = no
+											opinion_effect = no
+										}
+									}
+								}
+
 								create_family_palace = yes
+								set_government_type = merchant_republic_government
 							}
 						}
+					}
 
+					tooltip = {
 						set_government_type = merchant_republic_government
 					}
-				}
-			}
 
-			if = {
-				limit = {
-					capital_scope = {
-						is_coastal = yes
+					if = {
+						limit = { ai = no }
+
+						chronicle = {
+							entry = CHRONICLE_NOMAD_FOUNDED_MERCHANT_REPUBLIC
+							picture = GFX_evt_busy_trading_dock_republic
+						}
 					}
 				}
-
-				FROM = {
-					show_scope_change = no
-
-					set_government_type = merchant_republic_government
-				}
-			}
-			else = {
-				FROM = {
-					show_scope_change = no
-
+				else = {
 					set_government_type = republic_government
 				}
 			}
 
-			FROM = {
-				show_scope_change = no
-
-				chronicle = {
-					entry = CHRONICLE_NOMAD_FOUNDED_MERCHANT_REPUBLIC
-					picture = GFX_evt_busy_trading_dock_republic
-				}
-
+			hidden_effect = {
 				any_player = {
-					limit = {
-						NOT = { character = ROOT_FROM }
-					}
-
+					limit = { NOT = { character = FROM } }
 					narrative_event = { id = HL.1 }
 				}
 			}
 		}
-
 
 		ai_will_do = {
 			factor = 1
@@ -2094,7 +2138,7 @@ settlement_decisions = {
 							limit = {
 								controls_religion = no
 								holy_order = no
-								government = theocracy_government
+								is_theocracy = yes
 							}
 
 							set_government_type = tribal_government

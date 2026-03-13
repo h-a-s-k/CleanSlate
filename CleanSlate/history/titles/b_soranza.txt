@@ -1,0 +1,16 @@
+20.1.1 = {
+	active = no
+}
+
+1312.7.3 = {
+	active = yes
+	holding_dynasty = 7238
+	holder = 32132 # Giovannia Soranza
+	liege = k_venice
+}
+
+1328.12.31 = {
+	active = no
+	holder = 0
+	liege = 0
+}

@@ -222,17 +222,18 @@ narrative_event = {
 		name = EVTOPTAHF20003
 
 		if = {
-			limit = {
-				has_nickname = no
-				higher_real_tier_than = DUKE
-			}
+			limit = { higher_real_tier_than = DUKE }
 
 			if = {
-				limit = { event_target:sponsoring_king = { religion_group = christian } }
+				limit = {
+					can_apply_cool_nickname_trigger = yes
+					event_target:sponsoring_king = { religion_group = christian }
+				}
 				give_nickname = nick_the_confessor
 			}
 			else_if = {
 				limit = {
+					can_apply_super_cool_nickname_trigger = yes
 					event_target:sponsoring_king = {
 						OR = {
 							religion_group = muslim
@@ -245,11 +246,15 @@ narrative_event = {
 				give_nickname = nick_the_submissive
 			}
 			else_if = {
-				limit = { event_target:sponsoring_king = { religion_group = jewish_group } }
-				give_nickname = nick_the_deliverer
+				limit = {
+					can_apply_super_cool_nickname_trigger = yes
+					event_target:sponsoring_king = { religion_group = jewish_group }
+				}
+				give_nickname = nick_the_delivered
 			}
 			else_if = {
 				limit = {
+					can_apply_super_cool_nickname_trigger = yes
 					event_target:sponsoring_king = {
 						religion_group = indian_group
 						NOT = { religion = buddhist }
@@ -260,6 +265,7 @@ narrative_event = {
 			}
 			else_if = {
 				limit = {
+					can_apply_super_cool_nickname_trigger = yes
 					event_target:sponsoring_king = {
 						OR = {
 							religion = buddhist
@@ -271,23 +277,38 @@ narrative_event = {
 				give_nickname = nick_the_illuminated
 			}
 			else_if = {
-				limit = { event_target:sponsoring_king = { religion = west_african_pagan_reformed } }
+				limit = {
+					can_apply_super_cool_nickname_trigger = yes
+					event_target:sponsoring_king = { religion = west_african_pagan_reformed }
+				}
 				give_nickname = nick_the_awoken
 			}
 			else_if = {
-				limit = { event_target:sponsoring_king = { religion = aztec_pagan_reformed } }
-				give_nickname = nick_the_bleeding_eyes
+				limit = {
+					can_apply_super_cool_nickname_trigger = yes
+					event_target:sponsoring_king = { religion = aztec_pagan_reformed }
+				}
+				give_nickname = nick_bleeding_eyes
 			}
 			else_if = {
-				limit = { event_target:sponsoring_king = { religion = tengri_pagan_reformed } }
+				limit = {
+					can_apply_super_cool_nickname_trigger = yes
+					event_target:sponsoring_king = { religion = tengri_pagan_reformed }
+				}
 				give_nickname = nick_the_sky_rider
 			}
 			else_if = {
-				limit = { event_target:sponsoring_king = { religion = hellenic_pagan_reformed } }
+				limit = {
+					can_apply_super_cool_nickname_trigger = yes
+					event_target:sponsoring_king = { religion = hellenic_pagan_reformed }
+				}
 				give_nickname = nick_the_civilized
 			}
 			else_if = {
-				limit = { event_target:sponsoring_king = { religion_group = pagan_group } }
+				limit = {
+					can_apply_super_cool_nickname_trigger = yes
+					event_target:sponsoring_king = { religion_group = pagan_group }
+				}
 				give_nickname = nick_the_exalted
 			}
 		}
@@ -297,10 +318,8 @@ narrative_event = {
 			on_trigger = has_law
 
 			tribal_organization_3 = {
-				any_demesne_title = {
+				primary_title = {
 					show_scope_change = no
-
-					limit = { higher_real_tier_than = COUNT }
 
 					add_law = {
 						law = tribal_organization_4
@@ -311,10 +330,8 @@ narrative_event = {
 			}
 
 			tribal_organization_2 = {
-				any_demesne_title = {
+				primary_title = {
 					show_scope_change = no
-
-					limit = { higher_real_tier_than = COUNT }
 
 					add_law = {
 						law = tribal_organization_3
@@ -325,10 +342,8 @@ narrative_event = {
 			}
 
 			tribal_organization_1 = {
-				any_demesne_title = {
+				primary_title = {
 					show_scope_change = no
-
-					limit = { higher_real_tier_than = COUNT }
 
 					add_law = {
 						law = tribal_organization_2
@@ -339,11 +354,8 @@ narrative_event = {
 			}
 
 			tribal_organization_0 = {
-				any_demesne_title = {
-
+				primary_title = {
 					show_scope_change = no
-
-					limit = { higher_real_tier_than = COUNT }
 
 					add_law = {
 						law = tribal_organization_1
@@ -788,7 +800,7 @@ narrative_event = {
 		}
 
 		if = {
-			limit = { has_nickname = no }
+			limit = { can_apply_super_cool_nickname_trigger = yes }
 
 			if = {
 				limit = { religion_group = christian }
@@ -819,7 +831,7 @@ narrative_event = {
 			}
 			else_if = {
 				limit = { religion = aztec_pagan_reformed }
-				give_nickname = nick_the_whirling_spell
+				give_nickname = nick_whirling_spell
 			}
 			else_if = {
 				limit = { religion = tengri_pagan_reformed }
@@ -2045,10 +2057,8 @@ narrative_event = {
 			on_trigger = has_law
 
 			tribal_organization_3 = {
-				any_demesne_title = {
+				primary_title = {
 					show_scope_change = no
-
-					limit = { higher_real_tier_than = COUNT }
 
 					add_law = {
 						law = tribal_organization_4
@@ -2059,10 +2069,8 @@ narrative_event = {
 			}
 
 			tribal_organization_2 = {
-				any_demesne_title = {
+				primary_title = {
 					show_scope_change = no
-
-					limit = { higher_real_tier_than = COUNT }
 
 					add_law = {
 						law = tribal_organization_3
@@ -2073,10 +2081,8 @@ narrative_event = {
 			}
 
 			tribal_organization_1 = {
-				any_demesne_title = {
+				primary_title = {
 					show_scope_change = no
-
-					limit = { higher_real_tier_than = COUNT }
 
 					add_law = {
 						law = tribal_organization_2
@@ -2087,11 +2093,8 @@ narrative_event = {
 			}
 
 			tribal_organization_0 = {
-				any_demesne_title = {
-
+				primary_title = {
 					show_scope_change = no
-
-					limit = { higher_real_tier_than = COUNT }
 
 					add_law = {
 						law = tribal_organization_1
@@ -4594,8 +4597,7 @@ character_event = {
 		trigger = {
 			event_target:converting_king = {
 				any_realm_province = {
-					religion_group = pagan_group
-					is_reformed_religion = no
+					is_unreformed_pagan_trigger = yes
 					NOT = { religion = ROOT }
 					held_under_PREV = yes
 				}
@@ -4665,8 +4667,7 @@ character_event = {
 
 					NOT = {
 						any_realm_province = {
-							religion_group = pagan_group
-							is_reformed_religion = no
+							is_unreformed_pagan_trigger = yes
 							NOT = { religion = ROOT }
 							held_under_PREV = yes
 						}
@@ -4973,8 +4974,7 @@ letter_event = {
 
 		trigger = {
 			any_realm_province = {
-				religion_group = pagan_group
-				is_reformed_religion = no
+				is_unreformed_pagan_trigger = yes
 				NOT = { religion = FROM }
 				held_under_PREV = yes
 			}
@@ -4985,8 +4985,7 @@ letter_event = {
 
 			random_realm_province = {
 				limit = {
-					religion_group = pagan_group
-					is_reformed_religion = no
+					is_unreformed_pagan_trigger = yes
 					NOT = { religion = FROM }
 					held_under_PREV = yes
 				}
@@ -10339,6 +10338,12 @@ character_event = {
 
 		hidden_effect = {
 			any_demesne_title = {
+				limit = {
+					title = succ_law_title
+					is_law_potential = succ_gavelkind
+					NOT = { has_law = succ_gavelkind }
+				}
+
 				add_law = {
 					law = succ_gavelkind
 					cooldown = no
@@ -10361,7 +10366,7 @@ character_event = {
 
 		set_character_flag = flag_converter_chaplain_refused_gavelkind
 
-		hidden_tooltip = {
+		hidden_effect = {
 			FROM = {
 				character_event = {
 					id = HF.20110

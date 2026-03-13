@@ -106,6 +106,10 @@ String_FR_GetHerosHeroine_male;_;héros;;;;;;;;;;;;x
 String_FR_GetHerosHeroine_female;_;héroïne;;;;;;;;;;;;x
 String_FR_GetGrecGrecqueOpp_male;_;grecque;;;;;;;;;;;;x
 String_FR_GetGrecGrecqueOpp_female;_;grec;;;;;;;;;;;;x
+String_FR_GetCChe_male;_;c;;;;;;;;;;;;x
+String_FR_GetCChe_female;_;che;;;;;;;;;;;;x
+String_FR_GetSTe_male;_;s;;;;;;;;;;;;x
+String_FR_GetSTe_female;_;te;;;;;;;;;;;;x
 ## MOT DEVANT UNE COMMANDE (PAS D'ESPACE ENTRE LES DEUX COMMANDES)
 String_FR_APOSTROPHE;_;';;;;;;;;;;;;x
 String_FR_e_;_;e ;;;;;;;;;;;;x
@@ -1291,12 +1295,9 @@ String_FR_Get_du_JobTitle;_;[This.Get_only_du_JobTitle][This.GetJobTitle];;;;;;;
 String_FR_Get_au_JobTitle;_;[This.Get_only_au_JobTitle][This.GetJobTitle];;;;;;;;;;;;x
 String_FR_Get_on_JobTitle;_;[This.Get_only_on_JobTitle][This.GetJobTitle];;;;;;;;;;;;x
 String_FR_Get_e_JobTitle;_;[This.Get_only_e_JobTitle][This.GetJobTitle];;;;;;;;;;;;x
-String_FR_Get_du_SelectedIngredient_1;_;[This.Get_only_du_SelectedIngredient_1][This.GetSelectedIngredient_1];;;;;;;;;;;;x
-String_FR_Get_du_SelectedIngredient_2;_;[This.Get_only_du_SelectedIngredient_2][This.GetSelectedIngredient_2];;;;;;;;;;;;x
-String_FR_Get_le_SelectedIngredient_1;_;[This.Get_only_le_SelectedIngredient_1][This.GetSelectedIngredient_1];;;;;;;;;;;;x
-String_FR_Get_le_SelectedIngredient_2;_;[This.Get_only_le_SelectedIngredient_2][This.GetSelectedIngredient_2];;;;;;;;;;;;x
-String_FR_Get_e_SelectedIngredient_1;_;[This.Get_only_e_SelectedIngredient_1][This.GetSelectedIngredient_1];;;;;;;;;;;;x
-String_FR_Get_e_SelectedIngredient_2;_;[This.Get_only_e_SelectedIngredient_2][This.GetSelectedIngredient_2];;;;;;;;;;;;x
+String_FR_Get_du_IngredientShortName;_;[This.Get_only_du_IngredientShortName][This.GetIngredientShortName];;;;;;;;;;;;x
+String_FR_Get_le_IngredientShortName;_;[This.Get_only_le_IngredientShortName][This.GetIngredientShortName];;;;;;;;;;;;x
+String_FR_Get_e_IngredientShortName;_;[This.Get_only_e_IngredientShortName][This.GetIngredientShortName];;;;;;;;;;;;x
 String_FR_Get_du_HighGod;_;[This.Get_only_du_HighGod][This.Religion.GetHighGodName];;;;;;;;;;;;x
 String_FR_Get_au_HighGod;_;[This.Get_only_au_HighGod][This.Religion.GetHighGodName];;;;;;;;;;;;x
 String_FR_Get_le_HighGod;_;[This.Get_only_le_HighGod][This.Religion.GetHighGodName];;;;;;;;;;;;x

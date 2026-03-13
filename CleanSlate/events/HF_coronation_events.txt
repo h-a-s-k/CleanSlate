@@ -782,11 +782,7 @@ letter_event = {
 							prisoner = no
 							is_incapable = no
 							is_primary_heir = no
-
-							NOR = {
-								trait = monk
-								trait = nun
-							}
+							has_inheritance_blocker = no
 						}
 					}
 				}
@@ -805,11 +801,7 @@ letter_event = {
 							prisoner = no
 							is_incapable = no
 							is_primary_heir = no
-
-							NOR = {
-								trait = monk
-								trait = nun
-							}
+							has_inheritance_blocker = no
 						}
 					}
 				}
@@ -828,11 +820,7 @@ letter_event = {
 							prisoner = no
 							is_incapable = no
 							is_primary_heir = no
-
-							NOR = {
-								trait = monk
-								trait = nun
-							}
+							has_inheritance_blocker = no
 						}
 					}
 				}
@@ -851,11 +839,7 @@ letter_event = {
 							prisoner = no
 							is_incapable = no
 							is_primary_heir = no
-
-							NOR = {
-								trait = monk
-								trait = nun
-							}
+							has_inheritance_blocker = no
 						}
 					}
 				}
@@ -874,11 +858,7 @@ letter_event = {
 							prisoner = no
 							is_incapable = no
 							is_primary_heir = no
-
-							NOR = {
-								trait = monk
-								trait = nun
-							}
+							has_inheritance_blocker = no
 						}
 					}
 				}
@@ -942,11 +922,7 @@ letter_event = {
 							prisoner = no
 							is_incapable = no
 							is_primary_heir = no
-
-							NOR = {
-								trait = monk
-								trait = nun
-							}
+							has_inheritance_blocker = no
 						}
 					}
 				}
@@ -965,11 +941,7 @@ letter_event = {
 							prisoner = no
 							is_incapable = no
 							is_primary_heir = no
-
-							NOR = {
-								trait = monk
-								trait = nun
-							}
+							has_inheritance_blocker = no
 						}
 					}
 				}
@@ -988,11 +960,7 @@ letter_event = {
 							prisoner = no
 							is_incapable = no
 							is_primary_heir = no
-
-							NOR = {
-								trait = monk
-								trait = nun
-							}
+							has_inheritance_blocker = no
 						}
 					}
 				}
@@ -1011,11 +979,7 @@ letter_event = {
 							prisoner = no
 							is_incapable = no
 							is_primary_heir = no
-
-							NOR = {
-								trait = monk
-								trait = nun
-							}
+							has_inheritance_blocker = no
 						}
 					}
 				}
@@ -1935,6 +1899,11 @@ letter_event = {
 							trait = possessed
 						}
 
+						OR = {
+							has_dlc = "Horse Lords"
+							has_dlc = "Jade Dragon"
+						}
+
 						FROM = { is_tributary = no }
 					}
 
@@ -2545,11 +2514,7 @@ letter_event = {
 				prisoner = no
 				is_incapable = no
 				is_primary_heir = no
-
-				NOR = {
-					trait = monk
-					trait = nun
-				}
+				has_inheritance_blocker = no
 			}
 
 			save_event_target_as = son_monk_candidate
@@ -2635,11 +2600,7 @@ letter_event = {
 				prisoner = no
 				is_incapable = no
 				is_primary_heir = no
-
-				NOR = {
-					trait = monk
-					trait = nun
-				}
+				has_inheritance_blocker = no
 			}
 
 			save_event_target_as = son_holyorder_candidate
@@ -12568,17 +12529,10 @@ character_event = {
 			limit = {
 				independent = yes
 				FROM = { has_character_modifier = extravagant_coronation }
-				higher_real_tier_than = DUKE
 
 				OR = {
 					has_character_modifier = crowned_in_barn
-
-					NOR = {
-						trait = crowned_by_priest
-						trait = crowned_by_bishop
-						trait = crowned_by_pope
-						trait = crowned_by_myself
-					}
+					is_decision_potential = prepare_coronation_ceremony
 				}
 			}
 
@@ -13990,13 +13944,7 @@ character_event = {
 
 		OR = {
 			has_character_modifier = crowned_in_barn
-
-			NOR = {
-				trait = crowned_by_priest
-				trait = crowned_by_bishop
-				trait = crowned_by_pope
-				trait = crowned_by_myself
-			}
+			is_decision_potential = prepare_coronation_ceremony
 		}
 	}
 

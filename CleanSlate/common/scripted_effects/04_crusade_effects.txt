@@ -458,7 +458,7 @@ select_crusade_receiver_stance_effect = {
 # Crusader King/Queen set up
 setting_up_the_crusader_kingdom_effect = {
 	if = {
-		limit = { can_apply_average_nickname_trigger = yes }
+		limit = { can_apply_cool_nickname_trigger = yes }
 
 		random_list = {
 			10 = { give_nickname = nick_the_crusader }
@@ -536,12 +536,7 @@ setting_up_the_crusader_kingdom_effect = {
 	}
 
 	any_realm_lord = {
-		limit = {
-			NOR = {
-				government = theocracy_government
-				government = republic_government
-			}
-		}
+		limit = { is_feudal = yes }
 
 		primary_title = {
 			add_law = {
@@ -1467,8 +1462,18 @@ reconquista_win_effect = {
 		#		attacker = {
 		#			show_scope_change = no
 		#
-		#			make_tributary = {
-		#				who = PREV
+		#			if = {
+		#				limit = {
+		#					OR = {
+		#						has_dlc = "Horse Lords"
+		#						has_dlc = "Jade Dragon"
+		#					}
+		#				}
+		#
+		#					make_tributary = {
+		#						who = PREV
+		#					}
+		#				}
 		#			}
 		#		}
 		#	}

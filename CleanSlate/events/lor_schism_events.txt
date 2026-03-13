@@ -28,6 +28,7 @@ character_event = {
 
 		NOT = { has_global_flag = pat_antioch }
 		completely_controls = c_antioch
+		is_alternate_start = no
 	}
 
 	mean_time_to_happen = {
@@ -63,6 +64,7 @@ character_event = {
 
 		NOT = { has_global_flag = pat_jerusalem }
 		completely_controls = c_jerusalem
+		is_alternate_start = no
 	}
 
 	mean_time_to_happen = {
@@ -98,6 +100,7 @@ character_event = {
 
 		NOT = { has_global_flag = pat_alexandria }
 		completely_controls = c_alexandria
+		is_alternate_start = no
 	}
 
 	mean_time_to_happen = {
@@ -133,6 +136,7 @@ character_event = {
 
 		NOT = { has_global_flag = pat_rome }
 		completely_controls = c_roma
+		is_alternate_start = no
 	}
 
 	mean_time_to_happen = {
@@ -171,7 +175,11 @@ narrative_event = {
 		}
 
 		set_global_flag = schism_mended
-		give_nickname = nick_the_saint
+
+		if = {
+			limit = { can_apply_cool_nickname_trigger = yes }
+			give_nickname = nick_the_saint
+		}
 
 		any_playable_ruler = {
 			limit = {

@@ -302,6 +302,7 @@ character_event = {
 					is_ruler = no
 					is_lowborn = no
 					is_incapable = no
+					has_inheritance_blocker = no
 
 					trigger_if = {
 						limit = { is_adult = no }
@@ -311,9 +312,6 @@ character_event = {
 					}
 
 					NOR = {
-						trait = monk
-						trait = nun
-
 						any_heir_title = {
 							always = yes
 						}
@@ -550,9 +548,9 @@ character_event = {
 				# Change the capital to be of the same religion as the Crusader Lord/Lady
 				reverse_religion = capital_scope
 
-				# Apply nickname, if they don't have one
+				# Apply nickname, if they don't have a cool one
 				if = {
-					limit = { can_apply_average_nickname_trigger = yes }
+					limit = { can_apply_cool_nickname_trigger = yes }
 					give_nickname = nick_the_crusader
 				}
 
@@ -587,7 +585,16 @@ character_event = {
 			}
 		}
 
-		make_tributary = { who = event_target:current_crusade_beneficiary }
+		if = {
+			limit = {
+				OR = {
+					has_dlc = "Horse Lords"
+					has_dlc = "Jade Dragon"
+				}
+			}
+
+			make_tributary = { who = event_target:current_crusade_beneficiary }
+		}
 
 		ai_chance = { factor = 1 }
 	}
@@ -834,9 +841,9 @@ character_event = {
 				# Change the capital to be of the same religion as the Crusader Lord/Lady
 				reverse_religion = capital_scope
 
-				# Apply nickname, if they don't have one
+				# Apply nickname, if they don't have a cool one
 				if = {
-					limit = { can_apply_average_nickname_trigger = yes }
+					limit = { can_apply_cool_nickname_trigger = yes }
 					give_nickname = nick_the_crusader
 				}
 
@@ -3321,7 +3328,7 @@ character_event = {
 							any_province_holding = {
 								holding_type = temple
 								holder_scope = {
-									government = theocracy_government
+									is_theocracy = yes
 								}
 							}
 						}
@@ -3661,7 +3668,7 @@ character_event = {
 					holding_type = temple
 
 					holder_scope = {
-						government = theocracy_government
+						is_theocracy = yes
 					}
 				}
 

@@ -1,0 +1,34 @@
+### Vassal mercenary bands
+
+ghilman_composition = {
+	horse_archers = 675
+	light_cavalry = 1050
+	archers = 450
+	heavy_infantry = 450
+	knights = 75
+}
+
+mamluks_composition = {
+	horse_archers = 675
+	light_cavalry = 900
+	archers = 450
+	heavy_infantry = 250
+	knights = 255
+}
+
+papal_guard_composition = {
+	pikemen = 2500
+	knights = 500
+	archers = 1500
+}
+
+varangian_guard_composition = {
+	knights = 150
+	heavy_infantry = 1050
+	archers = 150
+}
+
+scholae_palatinae_composition = {
+	knights = 930
+	horse_archers = 270
+}

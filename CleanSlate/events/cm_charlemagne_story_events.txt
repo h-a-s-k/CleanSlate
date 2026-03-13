@@ -1696,6 +1696,8 @@ narrative_event = {
 			title = b_paderborn
 
 			holder_scope = {
+				religion_openly_norse_or_reformed_trigger = yes
+
 				top_liege = {
 					any_war = {
 						attacker = { character = ROOT }
@@ -3725,7 +3727,7 @@ narrative_event = {
 			add_artifact = crown_hre
 
 			if = {
-				limit = { has_nickname = no }
+				limit = { can_apply_cool_nickname_trigger = yes }
 				give_nickname = nick_the_great
 			}
 		}

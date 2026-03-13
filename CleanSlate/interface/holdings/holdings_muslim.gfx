@@ -185,13 +185,13 @@ spriteTypes = {
 
 	## dharmicgfx
 	spriteType = {
-		name = "GFX_settlement_temple_muslimgfx_indiangfx"
+		name = "GFX_settlement_temple_muslimgfx_dharmicgfx"
 		textureFile = "gfx\\interface\\placeholder_temple_desert_other.tga"
 		noOfFrames = 1
 		noRefCount = yes
 	}
 	spriteType = {
-		name = "GFX_settlement_temple_muslimgfx_indiangfx_looted"
+		name = "GFX_settlement_temple_muslimgfx_dharmicgfx_looted"
 		textureFile = "gfx\\interface\\placeholder_temple_desert_other_looted.tga"
 		noOfFrames = 1
 		noRefCount = yes

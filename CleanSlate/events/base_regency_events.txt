@@ -2341,15 +2341,8 @@ character_event = {
 
 			liege = {
 				OR = {
-					has_religion_feature = religion_equal
 					has_religion_feature = religion_matriarchal
-					has_religion_feature = religion_feature_bon
-					has_law = status_of_women_4
-
-					has_game_rule = {
-						name = gender
-						value = all
-					}
+					gender_equality_trigger = yes
 				}
 			}
 		}
@@ -3886,33 +3879,19 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		if = {
-			limit = { multiplayer = yes }
-
-			death = {
-				death_reason = death_duel
-				killer = FROM
-			}
+		death = {
+			death_reason = death_duel
+			killer = FROM
 		}
 	}
 
 	option = {
 		name = EVTOPTA61232
 
-		if = {
-			limit = { multiplayer = no }
-
+		tooltip = {
 			death = {
 				death_reason = death_duel
 				killer = FROM
-			}
-		}
-		else = {
-			tooltip = {
-				death = {
-					death_reason = death_duel
-					killer = FROM
-				}
 			}
 		}
 	}

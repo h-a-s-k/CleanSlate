@@ -34,17 +34,11 @@ character_event = {
 		}
 
 		is_inaccessible_trigger = no
+		gender_equality_trigger = no
 
 		NOR = {
-			has_game_rule = {
-				name = gender
-				value = all
-			}
-
 			has_religion_feature = religion_matriarchal
 			has_religion_feature = religion_patriarchal
-			has_religion_feature = religion_equal
-			has_religion_feature = religion_feature_bon
 		}
 	}
 
@@ -1303,6 +1297,7 @@ character_event = {
 			is_adult = yes
 			is_landed = yes
 			is_councillor = no
+			in_revolt = no
 			is_inaccessible_or_incapable_trigger = no
 
 			OR = {
@@ -1376,10 +1371,6 @@ character_event = {
 			}
 
 			NOR = {
-				primary_title = {
-					temporary = yes
-				}
-
 				has_opinion_modifier = {
 					name = opinion_refused_council
 					who = ROOT
@@ -1387,7 +1378,6 @@ character_event = {
 
 				trait = content
 			}
-
 		}
 	}
 

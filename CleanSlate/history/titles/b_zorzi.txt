@@ -1,0 +1,16 @@
+20.1.1 = {
+	active = no
+}
+
+1311.8.13 = {
+	active = yes
+	holding_dynasty = 8734
+	holder = 32131 # Marino Zorzi
+	liege = k_venice
+}
+
+1312.7.3 = {
+	active = no
+	holder = 0
+	liege = 0
+}

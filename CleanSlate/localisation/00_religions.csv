@@ -21,6 +21,7 @@ orthodox_DESC;The Orthodox Church is the other main branch of Chalcedonian Chris
 
 bogomilist;Bogomilist;bogomile;Bogomilisch;;Bogomila;;;;;;;;;x
 bogomilist_DESC;Bogomilism is an originally Orthodox Christian heresy with Gnostic elements that completely rejects the ecclesiastical hierarchy and advocates a return to early Christianity. Bogomilists believe that the world was created by an evil demiurge - the Devil.;Le bogomilisme est à l'origine une hérésie chrétienne orthodoxe incluant des éléments gnostiques rejetant la hiérarchie ecclésiale et prêchant le retour au christianisme primitif. Les bogomiles croient que le monde fut crée par un démiurge démoniaque : le Diable.;Die Bogomilen sind eine orthodoxe Ketzerei mit gnostischen Elementen. Sie lehnen die kirchliche Hierarchie gänzlich ab und arbeiten stattdessen auf eine Rückkehr zur frühen Form des Christentums hin. Sie glauben, dass die Welt vom Teufel geschaffen ist.;;El bogomilismo es una herejía de los cristianos ortodoxos combinada con elementos gnósticos que rechazan totalmente la jerarquía eclesiástica y predican la vuelta al cristianismo original. Los bogomilistas creen que el mundo fue creado por un demiurgo malvado, el Diablo.;;;;;;;;;x
+bogomilist_FEATURES;§Y*§! Women may hold all councillor positions\n§Y*§! Women may lead armies;§Y*§! Les femmes peuvent occuper n'importe quel poste du Conseil\n§Y*§! Les femmes peuvent mener des armées au combat;§Y*§! Frauen können alle Ratspositionen bekleiden\n§Y*§! Frauen können Armeen befehligen;;§Y*§! Las mujeres pueden ocupar todos los puestos de consejero\n§Y*§!Las mujeres pueden dirigir ejércitos;;;;;;;;;x
 
 monothelite;Monothelite;monothélite;Monothelitisch;;Monotelista;;;;;;;;;x
 monothelite_DESC;Monothelitism is a Christological doctrine that was declared heretical in 681. Monothelites attempted to develop the Miaphysite and Monophysite stance on the single nature of Christ by saying he had both a human and a divine nature but only a single will. The nominal head of the Monothelite Church is the Monothelite Patriarch of Antioch.;Le monothélisme est une doctrine christologique qui a été déclarée hérétique en 681. Les monothélites tentent de développer les énoncés miaphysite et monophysite sur la nature unique du Christ en déclarant qu'il avait une nature à la fois humaine et divine, mais une seule volonté. Le chef officiel de l'Église monothélite est le patriarche d'Antioche.;Der Monothelitismus ist eine christologische Doktrin, die im Jahre 681 als ketzerisch erklärt wurde. Monotheliten versuchten, die miaphysitischen und monophysitischen Ansichten zu vereinen, indem sie erklärten, dass Christus eine göttliche und eine menschliche Natur habe, aber nur einen Willen. Das offizielle Oberhaupt ist der Monothelitische Patriarch von Antiochia.;;El Monotelismo es una doctrina Cristológica que fue declarada como herética el año 681. Los Monotelitas intentaron desarrollar las posturas  Miafisita y Monofisista de la naturaleza única de Cristo diciendo que tenía tanto una naturaleza divina como humana, pero una única voluntad. El jefe nominal de la Iglesia Monotelita es el Patriarca Monotelita de Antioquía.;;;;;;;;;x
@@ -97,6 +98,7 @@ zoroastrian_DESC;Zoroastrians worship Ahura Mazda, the uncreated God, as proclai
 
 mazdaki;Mazdaki;mazdakite;Mazdakit;;Mazdekita;;;;;;;;;x
 mazdaki_DESC;Mazdak was a Zoroastrian priest who claimed to be a prophet of Ahura Mazda. He attempted to reform the religion with Gnostic elements, and advocated communal possessions and welfare programs. His teachings fell out of favor with the Shahanshah Kavadh I in 524, but pockets of there heresy survived in remote areas. This heresy has no formal head and no special game mechanics.;Mazdak est un prêtre zoroastrien qui se dit être prophète d'Ahura Mazda. Il a tenté de réformer la religion au moyen d'éléments gnostiques et a prôné la communauté des biens ainsi que des mesures sociales. Ses enseignements sont tombés en disgrâce à l'arrivée de Shahanshah Kavadh Ier en 524, mais cette hérésie a survécu dans des poches isolées. \n\nDans le jeu, cette hérésie n'a ni chef officiel ni mécanique spécifique.;Mazdak war ein zoroastrischer Priester, der behauptete, ein Prophet von Ahura Mazda zu sein. Er versuchte, die Religion mit gnostischen Elementen zu reformieren, und befürwortete Gemeinschaftsbesitz und Wohlfahrtsprogramme. Seine Lehren verloren die Gunst des Shahanshah Kavadh I. im Jahre 524, doch in entfernten Gegenden überlebte diese Ketzerei. Diese Ketzerei besitzt kein offizielles Oberhaupt und keine gesonderten Spielmechaniken.;;Mazdak era un sacerdote Zoroastra que decía ser un profeta de Ahura Mazda. Intentó reformar la religión con elementos Gnósticos, y abogó por las posesiones comunales y programas de bienestar. Sus enseñanzas cayeron en desgracia con el Shahanshah Kavadh I en 524, pero detalles de su herejía sobrevivieron en zonas remotas. Esta herejía no tiene jefe oficial ni mecánica de juego especial.;;;;;;;;;x
+mazdaki_FEATURES;§Y*§! Women may hold all councillor positions\n§Y*§! Women may lead armies;§Y*§! Les femmes peuvent occuper n'importe quel poste du Conseil\n§Y*§! Les femmes peuvent mener des armées au combat;§Y*§! Frauen können alle Ratspositionen bekleiden\n§Y*§! Frauen können Armeen befehligen;;§Y*§! Las mujeres pueden ocupar todos los puestos de consejero\n§Y*§!Las mujeres pueden dirigir ejércitos;;;;;;;;;x
 
 manichaean;Manichaean;manichéenne;Manichäist;;Maniquea;;;;;;;;;x
 manichaean_DESC;Manichaeism is a Gnostic religion founded by the alleged Prophet Mani who was put to death by Sassanid Shahanshah Bahram I in 277 A.D. His 'Religion of Light' incorporated elements of Christianity, Zoroastrianism, Buddhism and Gnosticism. In the game, Manichaeism is regarded as Zoroastrian heresy with its own special mechanics. The formal head of the religion is Yamag, who normally resides in Samarkand.;Le manichéisme est une religion gnostique fondée par le prétendu Prophète Mani, mis à mort par le Sassanide Shahanshah Bahram Ier en 277 apr. J.-C. Sa « Religion de la Lumière » incorpore des éléments du christianisme, du zoroastrisme, du bouddhisme et du gnosticisme. Dans le jeu, le manichéisme est considéré comme une hérésie zoroastrienne avec ses propres mécaniques. Le chef officiel de cette religion est l'yamag, qui réside habituellement à Samarcande.;Der Manichäismus ist eine gnostische Religion, die von dem angeblichen Propheten Mani, der von Sassanid Shahanshah Bahram I 277 n. Chr. zum Tode verurteilt wurde, gegründet wurde. Seine "Religion des Lichts" hat Elemente des Christentums, des Zoroastrismus, des Buddhismus und des Gnostizismus eingebunden. Im Spiel gilt der Manichäismus als zoroastrische Ketzerei mit eigener Spezialmechanik. Der offizielle Kopf der Religion ist Yamag, der normalerweise in Samarkand wohnt.;;El maniqueísmo es una religión gnóstica fundada por el supuesto profeta Mani que fue ejecutado por el sasánida Shahanshah Bahram I en el año 277 D.C. Su 'religión de la luz' unía elementos del cristianismo, zoroastrianismo, budismo y gnosticismo. En el juego, el maniqueísmo se considera una herejía zoroastriana con sus propias mecánicas especiales. La cabeza formal de la religión es el Yamag, que suele residir en Samarcanda.;;;;;;;;;x
@@ -205,18 +207,18 @@ GOD_APHRODITE;Aphrodite;;;;Afrodita;;;;;;;;;x
 GOD_APOLLO;Apollo;Apollon;;;Apolo;;;;;;;;;x
 GOD_ARES;Ares;Arès;;;;;;;;;;;;x
 GOD_ARTEMIS;Artemis;Artémis;;;Artemisa;;;;;;;;;x
-GOD_ATHENA;Athena;Athéna;;;Atenea;;;;;;;;;x
+GOD_ATHENA;Athena;Athéna;Athene;;Atenea;;;;;;;;;x
 GOD_BRAHMA;Brahma;;;;;;;;;;;;;x
 GOD_CERES;Ceres;Cérès;;;;;;;;;;;;x
 GOD_CIHUACOATL;Cihuacoatl;;;;Cihuacóatl;;;;;;;;;x
 GOD_CIHUACOATL_2;Cihuacoatl;;;;Cihuacóatl;;;;;;;;;x
-GOD_DELFINE;Delfine;Delphin;;;Delfín;;;;;;;;;x
-GOD_DEMETRA;Demetra;Déméter;;;Deméter;;;;;;;;;x
+GOD_DELFINE;Delphyne;Delphin;;;Delfina;;;;;;;;;x
+GOD_DEMETRA;Demeter;Déméter;;;Deméter;;;;;;;;;x
 GOD_DESI;Desi;;;;;;;;;;;;;x
 GOD_DIANA;Diana;Diane;;;;;;;;;;;;x
-GOD_DIEVAS;Dievas;;;;;;;;;;;;;x
+GOD_DIEVAS;Dievas;;Dievs;;;;;;;;;;;x
 GOD_DIEVAS_2;Dievas;;Dievs;;;;;;;;;;;x
-GOD_DIONYSUS;Dionysus;Dionysos;;;Dionisio;;;;;;;;;x
+GOD_DIONYSUS;Dionysus;Dionysos;;;Dioniso;;;;;;;;;x
 GOD_DODOLA;Dodola;;;;;;;;;;;;;x
 GOD_DRALHA_YESI;Dralha Yesi;;;;;;;;;;;;;x
 GOD_ERLIK_KHAN;Erlik Khan;;;;;;;;;;;;;x
@@ -226,10 +228,10 @@ GOD_FRIGG_2;Frigg;;;;;;;;;;;;;x
 GOD_GABIJA;Gabija;;;;;;;;;;;;;x
 GOD_GABIJA_2;Gabija;;;;;;;;;;;;;x
 GOD_GOD;God;Dieu;Gott;;Dios;;;;;;;;;x
-GOD_GREEK_JUPITER;Zeús;Zeus;Zeus;;Zeus;;;;;;;;;x
-GOD_GREEK_JUPITER_2;Zeús;Zeus;zeus;;Zeus;;;;;;;;;x
+GOD_GREEK_JUPITER;Zeus;;;;;;;;;;;;;x
+GOD_GREEK_JUPITER_2;Zeus;;;;;;;;;;;;;x
 GOD_HADES;Hades;Hadès;;;;;;;;;;;;x
-GOD_HEAVENLY_ORDER;The Heavenly Order;Ordre Céleste;Die himmlische Ordnung;;El Orden celeste;;;;;;;;;x
+GOD_HEAVENLY_ORDER;the Heavenly Order;Ordre Céleste;die himmlische Ordnung;;el Orden celeste;;;;;;;;;x
 GOD_HEPHAESTUS;Hephaestus;Héphaïstos;Hephaistos;;Hefesto;;;;;;;;;x
 GOD_HERA;Hera;Héra;;;;;;;;;;;;x
 GOD_HERA_2;Hera;Héra;;;;;;;;;;;;x
@@ -237,7 +239,7 @@ GOD_HERMES;Hermes;Hermès;;;;;;;;;;;;x
 GOD_HESTIA;Hestia;;;;;;;;;;;;;x
 GOD_HUITZILOPOCHTLI;Huitzilopochtli;;;;;;;;;;;;;x
 GOD_HUITZILOPOCHTLI_2;Huitzilopochtli;;;;;;;;;;;;;x
-GOD_JARILO;Jarilo;Yarilo;;;;;;;;;;;;x
+GOD_JARILO;Jarilo;Yarilo;;;Yarilo;;;;;;;;;x
 GOD_JESUS;Jesus;Jésus;;;Jesús;;;;;;;;;x
 GOD_JUMI;Jumi;;;;;;;;;;;;;x
 GOD_JUNO;Juno;Junon;;;;;;;;;;;;x
@@ -297,25 +299,25 @@ GOD_TAWUSE_MELEK;Tawuse Melek;Malek Taous;;;Tawûsê Melek;;;;;;;;;x
 GOD_TENGRI;Tengri;;;;;;;;;;;;;x
 GOD_TENGRI_2;Tengri;;;;;;;;;;;;;x
 GOD_TEZCATLIPOCA;Tezcatlipoca;;;;;;;;;;;;;x
-GOD_THE_ALLFATHER;the Allfather;le Père de tout;den Allvater;;el Padre de Todos;;;;;;;;;x
-GOD_THE_ALLFATHER_2;the Allfather;Père de tout;Allvater;;el Padre de todos;;;;;;;;;x
-GOD_THE_ALLMOTHER;the Allmother;Toute-Puissante;Allmuter;;Madre de todos;;;;;;;;;x
-GOD_THE_ANCESTORS;the Ancestors;les Ancêtres;die Ahnen;;Los Ancestros;;;;;;;;;x
+GOD_THE_ALLFATHER;the Allfather;Père de tout;der Allvater;;el Padre de Todos;;;;;;;;;x
+GOD_THE_ALLFATHER_2;the Allfather;Père de tout;der Allvater;;el Padre de Todos;;;;;;;;;x
+GOD_THE_ALLMOTHER;the Allmother;Mère de tout;die Allmuter;;la Madre de Todos;;;;;;;;;x
+GOD_THE_ANCESTORS;the Ancestors;les Ancêtres;die Ahnen;;los Ancestros;;;;;;;;;x
 GOD_THE_ARHAT;the Arhat;l'Arhat;Arhat;;el Arhat;;;;;;;;;x
-GOD_THE_BLESSED_VIRGIN;the Blessed Virgin;la Vierge Marie;der gesegneten Jungfrau;;La Santa Virgen;;;;;;;;;x
+GOD_THE_BLESSED_VIRGIN;the Blessed Virgin;la Vierge Marie;die Selige Jungfrau;la Santísima Virgen;;;;;;;;;x
 GOD_THE_BUDDHA;the Buddha;le Bouddha;Buddha;;el Buda;;;;;;;;;x
 GOD_THE_CREATOR;the Creator;Créateur;der Schöpfer;;el Creador;;;;;;;;;x
-GOD_THE_GIVER_OF_JUSTICE;the Giver of Justice;le Justicier;den Geber der Gerechtigkeit;;el que Imparte Justicia;;;;;;;;;x
-GOD_THE_GREAT_BEAR;the Great Bear;le Grand Ours;den Großen Bären;;el Gran Oso;;;;;;;;;x
-GOD_THE_GREATEST;the Greatest;le Très Grand;den Größten;;El Altísimo;;;;;;;;;x
-GOD_THE_LORD;the Lord;le Seigneur;Der Herr;;El Señor;;;;;;;;;x
-GOD_THE_MOTHER;the Mother;Mère;Mutter;;la Madre;;;;;;;;;x
-GOD_THE_PEACOCK_ANGEL;The Peacock Angel;l'Ange-Paon;den Pfauen-Engel;;El Ángel Pavo Real;;;;;;;;;x
+GOD_THE_GIVER_OF_JUSTICE;the Giver of Justice;le Justicier;der Geber der Gerechtigkeit;;el que Imparte Justicia;;;;;;;;;x
+GOD_THE_GREAT_BEAR;the Great Bear;le Grand Ours;der Große Bär;;el Gran Oso;;;;;;;;;x
+GOD_THE_GREATEST;the Greatest;le Plus Grand;der Größte;;el Altísimo;;;;;;;;;x
+GOD_THE_LORD;the Lord;le Seigneur;der Herr;;el Señor;;;;;;;;;x
+GOD_THE_MOTHER;the Mother;Mère;die Mutter;;la Madre;;;;;;;;;x
+GOD_THE_PEACOCK_ANGEL;the Peacock Angel;l'Ange-Paon;der Pfauen-Engel;;el Ángel Pavo Real;;;;;;;;;x
 GOD_THE_PERFECTED_ONES;the Perfected Ones;les Parfaits;die Vollendeten;;los Perfeccionados;;;;;;;;;x
-GOD_THE_SPIRITS;the Spirits;les Esprits;die Geister;;Los Espíritus;;;;;;;;;x
+GOD_THE_SPIRITS;the Spirits;les Esprits;die Geister;;los Espíritus;;;;;;;;;x
 GOD_THE_SUN;the Sun;le Soleil;die Sonne;;el Sol;;;;;;;;;x
-GOD_THE_SUPREME;the Supreme;le Suprême;den Mächtigen;;el Supremo;;;;;;;;;x
-GOD_THE_THUNDERER;the Thunderer;le Tonnant;den Donnerer;;el Dios del Trueno;;;;;;;;;x
+GOD_THE_SUPREME;the Supreme;le Suprême;der Mächtige;;el Supremo;;;;;;;;;x
+GOD_THE_THUNDERER;the Thunderer;le Tonnant;der Donnerer;;el Dios del Trueno;;;;;;;;;x
 GOD_THE_TIRTHANKARAS;the Tirthanankaras;Tîrthankaras;die Tirthanankaras;;los Tirthankaras;;;;;;;;;x
 GOD_THOR;Thor;;;;;;;;;;;;;x
 GOD_TLALOC;Tlaloc;;;;;;;;;;;;;x
@@ -333,7 +335,7 @@ GOD_VULCAN;Vulcan;Vulcain;Vulkan;;Vulcano;;;;;;;;;x
 GOD_WESHPARKAR;Weshparkar;;;;;;;;;;;;;x
 GOD_WISHAGHN;Wishaghn;;;;;;;;;;;;;x
 GOD_XIPE_TOTEC;Xipe-Totec;Xipe Totec;;;;;;;;;;;;x
-GOD_YANSHIH_TIENTSUN;Yuanshi Tianzun the celeste Venerable of the Primordial Beginning;Yuanshi Tianzun;Yuanshi Tianzun, der Himmelsehrwürdige des Uranfangs;;Yuanshi Tianzun, venerable celeste del Principio primordial;;;;;;;;;x
+GOD_YANSHIH_TIENTSUN;Yuanshi Tianzun, the Celestial Venerable of the Primordial Beginning;Yuanshi Tianzun, Vénérable Céleste de l'Origine Première;Yuanshi Tianzun, der Himmelsehrwürdige des Uranfangs;;Yuanshi Tianzun, Venerable Celeste del Principio Primordial;;;;;;;;;x
 GOD_YESHE_WALMO;Yeshe Walmo;;;;;;;;;;;;;x
 GOD_ZARVANA;Zarvana;;;;;;;;;;;;;x
 GOD_ZHANG_ZHUNG_MERI;Zhang Zhung Meri;;;;;;;;;;;;;x
@@ -342,23 +344,23 @@ GOD_ZURVAN;Zurvan;;;;;;;;;;;;;x
 PROPHET_MANI;Mani;;;;;;;;;;;;;x
 PROPHET_MAZDAK;Mazdak;;;;;;;;;;;;;x
 PROPHET_ZOROASTER;Zoroaster;Zoroastre;;;Zoroastro;;;;;;;;;x
-THE_ANCESTORS;The Ancestors;les Ancêtres;Die Vorfahren;;Los Ancestros;;;;;;;;;x
+THE_ANCESTORS;the Ancestors;les Ancêtres;die Vorfahren;;los Ancestros;;;;;;;;;x
 THE_PANTOKRATOR;the Pantokrator;le Pantocrator;der Pantokrator;;el Pantocrátor;;;;;;;;;x
-THE_THREE_PURITIES;The Three Purities;les trois Puretés;Die Drei Reinen;;Las Tres Purezas;;;;;;;;;x
+THE_THREE_PURITIES;the Three Purities;les trois Puretés;die Drei Reinen;;las Tres Purezas;;;;;;;;;x
 
 # Evil god names
 IBLIS;Iblis;;;;;;;;;;;;;x
 SHAYTAN;Shaytan;;;;Shaitán;;;;;;;;;x
-THE_DEVIL;the Devil;le Diable;der Teufel;;el Demonio;;;;;;;;;x
-THE_DARK_SPIRITS;the Dark Spirits;les Esprits Ténèbreux;die dunklen Geister;;los Espíritus Oscuros;;;;;;;;;x
+THE_DEVIL;the Devil;le Diable;der Teufel;;el Diablo;;;;;;;;;x
+THE_DARK_SPIRITS;the Dark Spirits;les Esprits Ténèbreux;die Dunklen Geister;;los Espíritus Oscuros;;;;;;;;;x
 SATAN;Satan;;;;Satanás;;;;;;;;;x
 AHRIMAN;Ahriman;;;;Arimán;;;;;;;;;x
 ANGRA_MAINYU;Angra Mainyu;;;;;;;;;;;;;x
 THE_DEMIURGE;the Demiurge;le Démiurge;der Demiurg;;el Demiurgo;;;;;;;;;x
 LUCIFER;Lucifer;;Luzifer;;;;;;;;;;;x
-THE_VINAYAKAS;the Vinyakas;les Vinâyakas;Die Vinyakas;;los Vinayakas;;;;;;;;;x
+THE_VINAYAKAS;the Vinyakas;les Vinâyakas;die Vinyakas;;los Vinayakas;;;;;;;;;x
 MARA;Mara;;;;;;;;;;;;;x
-THE_PUNISHERS;the Punishers;les Punisseurs;Die Bestrafer;;los Castigadores;;;;;;;;;x
+THE_PUNISHERS;the Punishers;les Punisseurs;die Bestrafer;;los Castigadores;;;;;;;;;x
 KING_YAN;King Yan;Roi Yan;König Yan;;Rey Yan;;;;;;;;;x
 YANLUO;Yanluo;;;;;;;;;;;;;x
 JORMUNGANDR;Jörmungandr;;;;Jörmungander;;;;;;;;;x
@@ -374,19 +376,19 @@ TLAZOLTEOTL;Tlazolteotl;;;;Tlazoltéotl;;;;;;;;;x
 XOLOTL;Xolotl;;;;Xólotl;;;;;;;;;x
 GOD_MICTLANTECUHTLI;Mictlantecuhtli;;;;;;;;;;;;;x
 CHERNOBOG;Chernobog;;;;Chernabog;;;;;;;;;x
-THE_DARKNESS;the Darkness;les Ténèbres;Die Dunkelheit;;la Oscuridad;;;;;;;;;x
+THE_DARKNESS;the Darkness;les Ténèbres;die Dunkelheit;;la Oscuridad;;;;;;;;;x
 GOD_BACCHUS;Bacchus;;;;Baco;;;;;;;;;x
 GOD_MERCURY;Mercury;Mercure;Merkur;;Mercurio;;;;;;;;;x
 GOD_PLUTO;Pluto;Pluton;;;Plutón;;;;;;;;;x
 GOD_SATURN;Saturn;Saturne;;;Saturno;;;;;;;;;x
 GOD_TYPHON;Typhon;;;;Tifón;;;;;;;;;x
-GOD_THE_EVIL_ONES;The Evil Ones;les Maléfiques;die Bösen;;Los malignos;;;;;;;;;x
+GOD_THE_EVIL_ONES;the Evil Ones;les Maléfiques;die Bösen;;los Malignos;;;;;;;;;x
 GOD_VELES;Veles;Vélès;;;;;;;;;;;;x
 
 # Great Holy War names
 CRUSADE;Crusade;Croisade;Kreuzzug;;Cruzada;;;;;;;;;x
 GREAT_HOLY_WAR;Great Holy War;Grande guerre sainte;Großer Heiliger Krieg;;Gran Guerra Santa;;;;;;;;;x
-JIHAD;Jihad;Guerre djihadique;Dschihad;;;;;;;;;;;x
+JIHAD;Jihad;Guerre djihadique;Dschihad;;Yihad;;;;;;;;;x
 
 # Priest titles
 RABBI;rabbi;rabbin;Rabbiner;;rabino;;;;;;;;;x
@@ -394,18 +396,18 @@ IMAM_PRIEST;imam;;Imam;;imán;;;;;;;;;x
 SHEIKH_PRIEST;sheikh;cheik;Scheich;;jeque;;;;;;;;;x
 MULLAH;mullah;mollah;Mullah;;mulá;;;;;;;;;x
 HERBAD;herbad;ervad;Herbad;;;;;;;;;;;x
-DIDASKALOS;Didaskalos;didaskalos;;;;;;;;;;;;x
-VAYNPAT;Vaynpat;vaynpat;;;;;;;;;;;;x
+DIDASKALOS;didaskalos;;Didaskolos;;;;;;;;;;;x
+VAYNPAT;vaynpat;;Vaynpat;;;;;;;;;;;x
 PRIEST;priest;prêtre;Priester;;sacerdote;;;;;;;;;x
 BHIKKHU;bhikkhu;;Bhikkhu;;;;;;;;;;;x
 NIRGRANTHA;nirgrantha;;Nirgrantha;;;;;;;;;;;x
-DAOSHI;Daoshi;daoshi;;;;;;;;;;;;x
+DAOSHI;daoshi;;Daoshi;;;;;;;;;;;x
 GODI;godi;;Godi;;;;;;;;;;;x
 SHAMAN;shaman;chamane;Schamane;;chamán;;;;;;;;;x
 VOLHV;volhv;volkhve;Volhv;;;;;;;;;;;x
 AUGUR;augur;augure;Augur;;;;;;;;;;;x
-LAMA;Lama;lama;;;;;;;;;;;;x
-PUJARI;Pujari;pujari;;;;;;;;;;;;x
+LAMA;lama;;Lama;;;;;;;;;;;x
+PUJARI;pujari;;Pujari;;;;;;;;;;;x
 
 # Scriptures
 THE_BOOK_OF_ILLUMINATION;The Book of Illumination;Livre de l'Illumination;Das Buch der Erleuchtung;;El Libro de la Iluminación;;;;;;;;;x
@@ -419,10 +421,10 @@ THE_LEGENDS;The Legends;Légendes;Die Legenden;;Las Leyendas;;;;;;;;;x
 THE_SAGAS;The Sagas;Sagas;Die Sagen;;Las Sagas;;;;;;;;;x
 THE_GREAT_SECRET;The Great Secret;Grand Secret;Das Große Geheimnis;;El Gran Secreto;;;;;;;;;x
 THE_EVANGELION;The Evangelion;Évangile de Mani;Die Evangelien;;El Evangelion;;;;;;;;;x
-THE_MAHABHARATA;The Mahabharata;Mahabharata;Das Mahabharata;;el Mahabharata;;;;;;;;;x
+THE_MAHABHARATA;The Mahabharata;Mahabharata;Das Mahabharata;;El Mahabharata;;;;;;;;;x
 THE_BUDDHACAVANA;The Buddhavacana;Buddhavacana;Das Buddhavacana;;La Buddhavacana;;;;;;;;;x
 THE_ANGAS_SUTRAS;The Angas Sutras;Sutras Angas;Die Angas-Sutras;;Los Sutras de los Angas;;;;;;;;;x
-TAO_TE_CHING;Tao Te Ching;Dao de jing;;;Dào Dé Jing;;;;;;;;;x
+TAO_TE_CHING;Tao Te Ching;Dao de jing;Daodejing;;Dào Dé Jing;;;;;;;;;x
 MDODUS;Mdo 'dus;Dodus;;;;;;;;;;;;x
 THE_ASCETICUS;The Asceticus;Ascètes;Der Asceticus;;Los Ascetas;;;;;;;;;x
 

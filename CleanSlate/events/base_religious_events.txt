@@ -1796,11 +1796,7 @@ character_event = {
 		is_catholic_branch = yes
 		is_any_kinslayer_trigger = yes
 		piety >= 100
-
-		NOR = {
-			trait = tribal_kinslayer
-			has_character_flag = kinslaying_offered
-		}
+		NOT = { has_character_flag = kinslaying_offered }
 
 		rightful_religious_head_scope = {
 			NOT = { has_character_modifier = pope_kinslaying_timer }
@@ -1889,6 +1885,12 @@ character_event = {
 				piety  = -25
 				wealth = -12
 				remove_trait = dynastic_kinslayer
+			}
+
+			tribal_kinslayer = {
+				piety = -25
+				wealth = -12
+				remove_trait = tribal_kinslayer
 			}
 		}
 
@@ -4101,10 +4103,7 @@ character_event = {
 					religion = aztec_pagan
 
 					any_neighbor_independent_ruler = {
-						trigger_if = {
-							limit = { religion_group = pagan_group }
-							is_reformed_religion = yes
-						}
+						is_not_unreformed_pagan_trigger = yes
 
 						# More cocky when pagan homeland attrition effect is active against neighbors
 						any_realm_province = {
@@ -4475,7 +4474,7 @@ character_event = {
 
 				any_war = {
 					using_cb = religious
-					war_score < 50
+					war_score > 50
 
 					defender = {
 						character = ROOT
@@ -4492,7 +4491,7 @@ character_event = {
 						using_cb = new_crusade
 					}
 
-					war_score < 50
+					war_score > 50
 
 					defender = {
 						character = ROOT

@@ -1065,12 +1065,12 @@ character_event = {
 
 	trigger = {
 		primary_title = {
-			temporary = yes
+			adventurer = yes
 		}
 	}
 
 	immediate = {
-#		log = "Ping event for raiding adventurer: [Root.GetBestName]."
+	#	log = "Ping event for raiding adventurer: [Root.GetBestName]."
 
 		if = {
 			limit = { # If this is true, prepare to settle.
@@ -1955,12 +1955,16 @@ character_event = {
 		clr_character_flag = raiding_adventurer
 		disband_event_forces = yes
 
-		activate_title = {
-			title = clan_title
-			status = no
-		}
+		if = {
+			limit = { has_landed_title = clan_title }
 
-		destroy_landed_title = clan_title
+			activate_title = {
+				title = clan_title
+				status = no
+			}
+
+			destroy_landed_title = clan_title
+		}
 
 		primary_title = {
 			if = {
@@ -2021,7 +2025,6 @@ character_event = {
 		war = no
 
 		primary_title = {
-			temporary = yes
 			adventurer = yes
 		}
 	}

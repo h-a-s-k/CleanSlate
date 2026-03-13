@@ -3947,23 +3947,14 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		if = {
-			limit = { multiplayer = yes }
-			death = { death_reason = death_murder_unknown_lightning }
-		}
+		death = { death_reason = death_murder_unknown_lightning }
 	}
 
 	option = {
 		name = EVTOPTA_LT_20610
 
-		if = {
-			limit = { multiplayer = no }
+		tooltip = {
 			death = { death_reason = death_murder_unknown_lightning }
-		}
-		else = {
-			tooltip = {
-				death = { death_reason = death_murder_unknown_lightning }
-			}
 		}
 	}
 }
@@ -4276,7 +4267,10 @@ character_event = {
 	}
 
 	after = {
-		FROM = { clear_flags_with_prefix = being_looted_ }
+		FROM = {
+			clr_wonder_flag = being_looted_public
+			clr_wonder_flag = being_looted_private
+		}
 	}
 }
 
@@ -4369,7 +4363,11 @@ character_event = {
 	option = { # Convert
 		name = EVTOPTA_LT_20900
 
-		event_target:target_wonder = { clear_flags_with_prefix = Hagia_Sophia_ }
+		event_target:target_wonder = {
+			clr_wonder_flag = Hagia_Sophia_catholic_cult
+			clr_wonder_flag = Hagia_Sophia_orthodox_cult
+			clr_wonder_flag = Hagia_Sophia_muslim_cult
+		}
 
 		if = {
 			limit = { is_catholic_branch = yes }

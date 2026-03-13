@@ -1600,7 +1600,7 @@ character_event = {
 			duration = -1
 		}
 	}
-	
+
 	after = {
 		clr_character_flag = flag_cheap_diviner
 		clr_character_flag = flag_sacrificing_human
@@ -1684,7 +1684,7 @@ character_event = {
 			duration = -1
 		}
 	}
-	
+
 	after = {
 		clr_character_flag = flag_cheap_diviner
 		clr_character_flag = flag_sacrificing_human
@@ -3013,8 +3013,6 @@ character_event = {
 	is_triggered_only = yes # on_character_convert_religion
 	hide_window = yes
 
-	is_patrician = no # Always use agnatic
-
 	trigger = {
 		OR = {
 			has_religion_feature = religion_patriarchal
@@ -3096,15 +3094,22 @@ character_event = {
 				}
 			}
 
-			any_demesne_title = {
+			primary_title = {
 				add_law = {
-					law = enatic_succession
+					law = status_of_women_4
 					cooldown = no
 					opinion_effect = no
 				}
+			}
+
+			any_demesne_title = {
+				limit = {
+					title = succ_law_title
+					is_law_potential = enatic_succession
+				}
 
 				add_law = {
-					law = status_of_women_4
+					law = enatic_succession
 					cooldown = no
 					opinion_effect = no
 				}
@@ -3183,15 +3188,22 @@ character_event = {
 				}
 			}
 
-			any_demesne_title = {
+			primary_title = {
 				add_law = {
-					law = agnatic_succession
+					law = status_of_women_0
 					cooldown = no
 					opinion_effect = no
 				}
+			}
+
+			any_demesne_title = {
+				limit = {
+					title = succ_law_title
+					is_law_potential = agnatic_succession
+				}
 
 				add_law = {
-					law = status_of_women_0
+					law = agnatic_succession
 					cooldown = no
 					opinion_effect = no
 				}
@@ -3280,15 +3292,22 @@ character_event = {
 				}
 			}
 
-			any_demesne_title = {
+			primary_title = {
 				add_law = {
-					law = true_cognatic_succession
+					law = status_of_women_4
 					cooldown = no
 					opinion_effect = no
 				}
+			}
+
+			any_demesne_title = {
+				limit = {
+					title = succ_law_title
+					is_law_potential = true_cognatic_succession
+				}
 
 				add_law = {
-					law = status_of_women_4
+					law = true_cognatic_succession
 					cooldown = no
 					opinion_effect = no
 				}
@@ -3306,6 +3325,8 @@ character_event = {
 	is_triggered_only = yes # on_startup
 	hide_window = yes
 
+	only_rulers = yes
+
 	trigger = {
 		is_save_game = no
 	}
@@ -3314,11 +3335,18 @@ character_event = {
 		if = {
 			limit = { has_religion_feature = religion_matriarchal }
 
-			any_demesne_title = {
+			primary_title = {
 				add_law = {
 					law = status_of_women_4
 					cooldown = no
 					opinion_effect = no
+				}
+			}
+
+			any_demesne_title = {
+				limit = {
+					title = succ_law_title
+					is_law_potential = enatic_succession
 				}
 
 				add_law = {
@@ -3331,11 +3359,18 @@ character_event = {
 		else_if = {
 			limit = { has_religion_feature = religion_patriarchal }
 
-			any_demesne_title = {
+			primary_title = {
 				add_law = {
 					law = status_of_women_0
 					cooldown = no
 					opinion_effect = no
+				}
+			}
+
+			any_demesne_title = {
+				limit = {
+					title = succ_law_title
+					is_law_potential = agnatic_succession
 				}
 
 				add_law = {
@@ -3353,11 +3388,18 @@ character_event = {
 				}
 			}
 
-			any_demesne_title = {
+			primary_title = {
 				add_law = {
 					law = status_of_women_4
 					cooldown = no
 					opinion_effect = no
+				}
+			}
+
+			any_demesne_title = {
+				limit = {
+					title = succ_law_title
+					is_law_potential = true_cognatic_succession
 				}
 
 				add_law = {
@@ -3954,6 +3996,7 @@ character_event = {
 			}
 		}
 
+		# CleanSlate: Exclusive event-driven nickname, so it always overrides
 		give_nickname = nick_the_apostate
 
 		narrative_event = {
@@ -7398,7 +7441,7 @@ narrative_event = {
 
 		hidden_effect = {
 			if = {
-				limit = { this_has_super_cool_nickname_trigger = no }
+				limit = { can_apply_super_cool_nickname_trigger = yes }
 
 				random_list = {
 					20 = {
@@ -7702,15 +7745,8 @@ character_event = {
 				trigger = {
 					event_target:scoped_province_owner = {
 						OR = {
-							has_law = status_of_women_4
 							has_religion_feature = religion_matriarchal
-							has_religion_feature = religion_equal
-							has_religion_feature = religion_feature_bon
-
-							has_game_rule = {
-								name = gender
-								value = all
-							}
+							gender_equality_trigger = yes
 						}
 					}
 				}
@@ -8417,8 +8453,7 @@ character_event = {
 							has_religion_feature = religion_feature_bon
 
 							AND = {
-								religion_group = pagan_group
-								is_reformed_religion = no
+								is_unreformed_pagan_trigger = yes
 
 								# Random World Checks
 								NOR = {
@@ -9873,23 +9908,14 @@ character_event = {
 	is_triggered_only = yes
 
 	immediate = {
-		if = {
-			limit = { multiplayer = yes }
-			death = { death_reason = death_accident }
-		}
+		death = { death_reason = death_accident }
 	}
 
 	option = {
 		name = EVTOPTAHF23406
 
-		if = {
-			limit = { multiplayer = no }
+		tooltip = {
 			death = { death_reason = death_accident }
-		}
-		else = {
-			tooltip = {
-				death = { death_reason = death_accident }
-			}
 		}
 	}
 }
@@ -9904,7 +9930,7 @@ character_event = {
 
 	is_triggered_only = yes # on_death
 	hide_window = yes
-	
+
 	only_playable = yes
 
 	trigger = {
@@ -10483,6 +10509,12 @@ character_event = {
 							has_religion_feature = religion_holy_family
 							has_religion_feature = religion_feature_zun
 						}
+
+						any_spouse_even_if_dead = {
+							is_parent_of = ROOT
+							is_close_relative = PREV
+							religion = PREV
+						}
 					}
 
 					change_variable = {
@@ -10743,16 +10775,16 @@ narrative_event = {
 
 		hidden_effect = {
 			if = {
-				limit = { this_has_super_cool_nickname_trigger = no }
+				limit = { can_apply_super_cool_nickname_trigger = yes }
 
 				random_list = {
 					20 = { give_nickname = nick_the_red_storm }
-					20 = { give_nickname = nick_the_scarlet_hands }
-					20 = { give_nickname = nick_the_blood_monger }
+					20 = { give_nickname = nick_scarlet_hands }
+					20 = { give_nickname = nick_the_bloodmonger }
 					20 = { give_nickname = nick_the_black_skull }
 					20 = { give_nickname = nick_the_heart_eater }
 					20 = { give_nickname = nick_the_slaughterer }
-					20 = { give_nickname = nick_the_soul_flayer }
+					20 = { give_nickname = nick_the_soulflayer }
 					20 = { give_nickname = nick_the_spirit_stalker }
 					10 = { give_nickname = nick_the_crimson_reaper }
 					10 = { give_nickname = nick_the_dreaded }
@@ -12740,16 +12772,13 @@ character_event = {
 
 		# Give a nickname
 		if = {
-			limit = {
-				this_has_cool_nickname_trigger = no
-				this_has_super_cool_nickname_trigger = no
-			}
+			limit = { can_apply_average_nickname_trigger = yes }
 
 			random_list = {
 				10 = { give_nickname = nick_the_skull_crusher }
-				10 = { give_nickname = nick_the_quick_foot }
+				10 = { give_nickname = nick_quick_foot }
 				10 = { give_nickname = nick_the_bleeder }
-				10 = { give_nickname = nick_the_sharp_teeth }
+				10 = { give_nickname = nick_sharp_teeth }
 				10 = { give_nickname = nick_the_crimson_flurry }
 				10 = { give_nickname = nick_the_champion_of_province }
 				10 = { give_nickname = nick_the_destroyer }
@@ -12760,23 +12789,23 @@ character_event = {
 				10 = { give_nickname = nick_the_scarlet_painter }
 
 				10 = {
-					trigger = { is_female = no }
-					give_nickname = nick_the_red_gladiator
+					if = {
+						limit = { is_female = no }
+						give_nickname = nick_the_red_gladiator
+					}
+					else = {
+						give_nickname = nick_the_red_gladiatrix
+					}
 				}
 
 				10 = {
-					trigger = { is_female = no }
-					give_nickname = nick_the_scarlet_eagle
-				}
-
-				10 = {
-					trigger = { is_female = yes }
-					give_nickname = nick_the_red_gladiatrix
-				}
-
-				10 = {
-					trigger = { is_female = yes }
-					give_nickname = nick_the_crimson_gorgon
+					if = {
+						limit = { is_female = no }
+						give_nickname = nick_the_scarlet_eagle
+					}
+					else = {
+						give_nickname = nick_the_crimson_gorgon
+					}
 				}
 			}
 		}
@@ -12831,33 +12860,19 @@ character_event = {
 	immediate = {
 		clr_character_flag = flag_blood_contender
 
-		if = {
-			limit = { multiplayer = yes }
-
-			death = {
-				death_reason = death_execution_aztec_sacrifice
-				killer = FROMFROM # The host
-			}
+		death = {
+			death_reason = death_execution_aztec_sacrifice
+			killer = FROMFROM # The host
 		}
 	}
 
 	option = {
 		name = EVTOPTAHF23456
 
-		if = {
-			limit = { multiplayer = no }
-
+		tooltip = {
 			death = {
 				death_reason = death_execution_aztec_sacrifice
 				killer = FROMFROM # The host
-			}
-		}
-		else = {
-			tooltip = {
-				death = {
-					death_reason = death_execution_aztec_sacrifice
-					killer = FROMFROM # The host
-				}
 			}
 		}
 	}
@@ -13357,16 +13372,16 @@ character_event = {
 			}
 
 			if = {
-				limit = { this_has_super_cool_nickname_trigger = no }
+				limit = { can_apply_super_cool_nickname_trigger = yes }
 
 				random_list = {
 					20 = { give_nickname = nick_the_red_storm }
-					20 = { give_nickname = nick_the_scarlet_hands }
-					20 = { give_nickname = nick_the_blood_monger }
+					20 = { give_nickname = nick_scarlet_hands }
+					20 = { give_nickname = nick_the_bloodmonger }
 					20 = { give_nickname = nick_the_black_skull }
 					20 = { give_nickname = nick_the_heart_eater }
 					20 = { give_nickname = nick_the_slaughterer }
-					20 = { give_nickname = nick_the_soul_flayer }
+					20 = { give_nickname = nick_the_soulflayer }
 					20 = { give_nickname = nick_the_spirit_stalker }
 					10 = { give_nickname = nick_the_crimson_reaper }
 					10 = { give_nickname = nick_the_dreaded }
@@ -14271,68 +14286,67 @@ character_event = {
 
 ############################################################
 
-# on_new_holder: Check succession/women's status when creating new vassals
-# ROOT is the character
-# FROM is the title
-# FROMFROM is the old holder
+# Check succession/women's status when creating new vassals
+# Opening scope is the new vassal
+# ROOT is the title
+# FROM is the liege
 character_event = {
 	id = HF.23700
 
-	is_triggered_only = yes # on_new_holder
+	is_triggered_only = yes # GRANT_LANDED_TITLE_INTERACTION_ACCEPT_EVENT
 	hide_window = yes
 
 	trigger = {
-		trigger_if = {
-			limit = { has_religion_feature = religion_patriarchal }
-			FROMFROM = { has_religion_feature = religion_patriarchal }
-		}
-		trigger_else_if = {
-			limit = {
-				OR = {
-					has_religion_feature = religion_equal
-					has_religion_feature = religion_feature_bon
-				}
-			}
+		is_ruler = no # No titles are actually given out yet at this point, hence must be a new vassal
 
-			FROMFROM = {
-				OR = {
-					has_religion_feature = religion_equal
-					has_religion_feature = religion_feature_bon
-				}
-			}
-		}
-		trigger_else = {
+		OR = {
+			has_religion_feature = religion_patriarchal
+			has_religion_feature = religion_equal
+			has_religion_feature = religion_feature_bon
 			has_religion_feature = religion_matriarchal
-			FROMFROM = { has_religion_feature = religion_matriarchal }
 		}
 	}
 
 	immediate = {
-		character_event = {
-			id = HF.23701
-			days = 1
-		}
+		set_character_flag = handle_succession@ROOT
 	}
 }
 
 character_event = {
 	id = HF.23701
 
-	is_triggered_only = yes
+	is_triggered_only = yes # on_new_holder, fires one day after HF.23700
 	hide_window = yes
 
-	immediate = {
-		if = {
-			limit = {
-				has_religion_feature = religion_matriarchal
-				is_patrician = no # Always use agnatic
-			}
+	trigger = {
+		has_character_flag = handle_succession@FROM
 
-			FROMFROM = {
+		OR = {
+			has_religion_feature = religion_patriarchal
+			has_religion_feature = religion_equal
+			has_religion_feature = religion_feature_bon
+			has_religion_feature = religion_matriarchal
+		}
+	}
+
+	immediate = {
+		clr_character_flag = handle_succession@FROM
+
+		if = {
+			limit = { has_religion_feature = religion_matriarchal }
+
+			primary_title = {
 				add_law = {
 					law = status_of_women_4
 					cooldown = no
 					opinion_effect = no
+				}
+			}
+
+			any_demesne_title = {
+				limit = {
+					title = succ_law_title
+					is_law_potential = enatic_succession
 				}
 
 				add_law = {
@@ -14345,11 +14359,18 @@ character_event = {
 		else_if = {
 			limit = { has_religion_feature = religion_patriarchal }
 
-			FROMFROM = {
+			primary_title = {
 				add_law = {
 					law = status_of_women_0
 					cooldown = no
 					opinion_effect = no
+				}
+			}
+
+			any_demesne_title = {
+				limit = {
+					title = succ_law_title
+					is_law_potential = agnatic_succession
 				}
 
 				add_law = {
@@ -14365,15 +14386,20 @@ character_event = {
 					has_religion_feature = religion_equal
 					has_religion_feature = religion_feature_bon
 				}
-
-				is_patrician = no # Always use agnatic
 			}
 
-			FROMFROM = {
+			primary_title = {
 				add_law = {
 					law = status_of_women_4
 					cooldown = no
 					opinion_effect = no
+				}
+			}
+
+			any_demesne_title = {
+				limit = {
+					title = succ_law_title
+					is_law_potential = true_cognatic_succession
 				}
 
 				add_law = {
@@ -16544,25 +16570,15 @@ narrative_event = {
 			limit = { is_female = no }
 
 			if = {
-				limit = {
-					this_has_cool_nickname_trigger = no
-					this_has_super_cool_nickname_trigger = no
-				}
-
+				limit = { can_apply_super_cool_nickname_trigger = yes }
 				give_nickname = nick_the_grand_patriarch
 			}
 
 			create_bloodline = { type = event_family_bloodline }
 		}
-
 		else = {
 			if = {
-				limit = {
-					this_has_cool_nickname_trigger = no
-					this_has_super_cool_nickname_trigger = no
-					is_female = yes
-				}
-
+				limit = { can_apply_super_cool_nickname_trigger = yes }
 				give_nickname = nick_the_grand_matriarch
 			}
 
@@ -16617,11 +16633,7 @@ narrative_event = {
 		name = EVTOPTAHF24058
 
 		if = {
-			limit = {
-				this_has_cool_nickname_trigger = no
-				this_has_super_cool_nickname_trigger = no
-			}
-
+			limit = { can_apply_super_cool_nickname_trigger = yes }
 			give_nickname = nick_the_benevolent
 		}
 

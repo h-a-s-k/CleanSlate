@@ -237,6 +237,7 @@ character_event = {
 
 		remove_trait = chest_pain
 		clr_character_flag = disease_not_serious
+		clr_character_flag = long_term_symptom # CleanSlate: Added to allow repeated chest pain treatments
 
 		hidden_effect = {
 			remove_character_modifier = symptom_treatment_1
@@ -1740,19 +1741,18 @@ character_event = {
 	trigger = {
 		trigger_if = {
 			limit = { is_playable = yes }
+
 			any_courtier_or_vassal = {
-				is_adult = yes
 				has_minor_title = title_court_physician
-				liege = { character = ROOT }
+				vassal_of = ROOT
 			}
 		}
 		trigger_else = {
 			OR = {
 				host = {
 					any_courtier_or_vassal = {
-						is_adult = yes
 						has_minor_title = title_court_physician
-						liege = { character = ROOT }
+						vassal_of = PREV
 					}
 				}
 
@@ -1813,7 +1813,11 @@ character_event = {
 		}
 		else = {
 			random_courtier_or_vassal = { # Markus' doing
-				limit = { has_minor_title = title_court_physician }
+				limit = {
+					has_minor_title = title_court_physician
+					vassal_of = PREV
+				}
+
 				save_event_target_as = court_physician
 			}
 		}

@@ -127,13 +127,7 @@ can_be_chancellor_trigger = {
 
 						# Some religions don't mind so much who does what
 						trigger_if = {
-							limit = {
-								OR = {
-									religion = cathar
-									religion = messalian
-								}
-							}
-
+							limit = { religion_is_feminist = yes }
 							religion = PREV
 						}
 
@@ -218,13 +212,7 @@ can_be_marshal_trigger = {
 
 						# Some religions don't mind so much who does what
 						trigger_if = {
-							limit = {
-								OR = {
-									religion = cathar
-									religion = messalian
-								}
-							}
-
+							limit = { religion_is_feminist = yes }
 							religion = PREV
 						}
 
@@ -300,13 +288,7 @@ can_be_treasurer_trigger = {
 
 						# Some religions don't mind so much who does what
 						trigger_if = {
-							limit = {
-								OR = {
-									religion = cathar
-									religion = messalian
-								}
-							}
-
+							limit = { religion_is_feminist = yes }
 							religion = PREV
 						}
 
@@ -398,13 +380,7 @@ can_be_spymaster_trigger = {
 
 						# Some religions don't mind so much who does what
 						trigger_if = {
-							limit = {
-								OR = {
-									religion = cathar
-									religion = messalian
-								}
-							}
-
+							limit = { religion_is_feminist = yes }
 							religion = PREV
 						}
 						trigger_else_if = {
@@ -570,13 +546,7 @@ can_be_councilmember_king_trigger = {
 
 				# Some religions don't mind so much who does what
 				trigger_if = {
-					limit = {
-						OR = {
-							religion = cathar
-							religion = messalian
-						}
-					}
-
+					limit = { religion_is_feminist = yes }
 					religion = PREV
 				}
 
@@ -638,13 +608,7 @@ can_be_councilmember_emperor_trigger = {
 
 				# Some religions don't mind so much who does what
 				trigger_if = {
-					limit = {
-						OR = {
-							religion = cathar
-							religion = messalian
-						}
-					}
-
+					limit = { religion_is_feminist = yes }
 					religion = PREV
 				}
 
@@ -694,8 +658,6 @@ ere_elective_politician_titles_trigger = { # Used in Imperial Elective to determ
 }
 
 can_still_be_commander_byzantine_trigger = {
-	primary_title = { temporary = no }
-
 	liege = {
 		character = FROMFROM
 		government = roman_imperial_government
@@ -720,6 +682,7 @@ can_still_be_commander_byzantine_trigger = {
 	}
 
 	is_inaccessible_or_incapable_trigger = no
+	in_revolt = no
 
 	NOR = {
 		has_character_modifier = guru
@@ -741,8 +704,7 @@ can_still_be_commander_byzantine_trigger = {
 				liege = {
 					any_vassal = {
 						higher_real_tier_than = BARON
-
-						primary_title = { temporary = no }
+						in_revolt = no
 
 						trigger_if = {
 							limit = {
@@ -811,13 +773,7 @@ can_still_be_marshal_byzantine_trigger = {
 
 					# Some religions don't mind so much who does what
 					trigger_if = {
-						limit = {
-							OR = {
-								religion = cathar
-								religion = messalian
-							}
-						}
-
+						limit = { religion_is_feminist = yes }
 						religion = PREV
 					}
 
@@ -888,7 +844,7 @@ byzantines_can_grant_commander_trigger = {
 			NOT = { #...Or there are no valid vassal candidates that can be commanders
 				any_vassal = {
 					higher_real_tier_than = BARON
-					primary_title = { temporary = no }
+					in_revolt = no
 
 					trigger_if = {
 						limit = {

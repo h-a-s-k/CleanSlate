@@ -1217,12 +1217,7 @@ society_decisions = {
 
 					fallback = {
 						if = {
-							limit = {
-								has_game_rule = {
-									name = gender
-									value = all
-								}
-							}
+							limit = { gender_equality_trigger = yes	}
 
 							create_random_soldier = {
 								random_traits = yes
@@ -1615,7 +1610,7 @@ society_decisions = {
 				# I could use some help winning this war
 				any_war = {
 					defender = { character = ROOT }
-					war_score < 50
+					war_score >= -50
 				}
 			}
 
@@ -1629,7 +1624,7 @@ society_decisions = {
 
 				any_war = {
 					defender = { character = ROOT }
-					war_score < -50
+					war_score > 50
 				}
 			}
 
@@ -1733,7 +1728,7 @@ society_decisions = {
 
 				any_war = {
 					defender = { character = ROOT }
-					war_score < -50
+					war_score > 50
 				}
 			}
 
@@ -1742,7 +1737,7 @@ society_decisions = {
 
 				any_war = {
 					defender = { character = ROOT }
-					war_score > 50
+					war_score < -50
 				}
 			}
 
@@ -1825,7 +1820,7 @@ society_decisions = {
 				# I could use some help winning this war
 				any_war = {
 					defender = { character = ROOT }
-					war_score < 50
+					war_score > -50
 				}
 			}
 
@@ -1839,7 +1834,7 @@ society_decisions = {
 
 				any_war = {
 					defender = { character = ROOT }
-					war_score < -50
+					war_score > 50
 				}
 			}
 
@@ -2134,7 +2129,7 @@ settlement_decisions = {
 					# I could use some help winning this war
 					any_war = {
 						defender = { character = ROOT }
-						war_score < 50
+						war_score > -50
 					}
 				}
 			}
@@ -2144,7 +2139,7 @@ settlement_decisions = {
 
 				any_war = {
 					defender = { character = ROOT }
-					war_score < -50
+					war_score > 50
 				}
 			}
 		}
